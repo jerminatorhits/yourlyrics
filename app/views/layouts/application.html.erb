@@ -6,6 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBuEpdYnNLfnQpOSuqaftIbzx5K-atmDic",
+    authDomain: "lyricsdatabase-ebdbc.firebaseapp.com",
+    databaseURL: "https://lyricsdatabase-ebdbc.firebaseio.com",
+    storageBucket: "lyricsdatabase-ebdbc.appspot.com",
+    messagingSenderId: "75666325301"
+  };
+  firebase.initializeApp(config);
+</script>
   </head>
 
   <body>

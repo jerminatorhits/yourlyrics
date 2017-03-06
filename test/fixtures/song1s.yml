@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tid: MyString
+  mxmid: MyString
+  lyrics_hash: MyString
+  artist: MyString
+  title: MyString
+
+two:
+  tid: MyString
+  mxmid: MyString
+  lyrics_hash: MyString
+  artist: MyString
+  title: MyString

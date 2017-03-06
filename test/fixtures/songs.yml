@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tid: MyString
+  mxmid: 1
+  lyrics_hash: MyText
+
+two:
+  tid: MyString
+  mxmid: 1
+  lyrics_hash: MyText

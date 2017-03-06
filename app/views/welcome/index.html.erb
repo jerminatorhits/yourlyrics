@@ -1,0 +1,8 @@
+<h1>Your Lyrics</h1>
+<h3>Access to all your favorite songs right at your fingertips</h3>
+<%= form_tag(songs_path, :method => "get", id: "search-form") do %>
+  <p>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Lyrics" %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>	  
+<% end %>

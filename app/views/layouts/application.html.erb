@@ -18,6 +18,9 @@
     <%= yield %>
     <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 <script>
+  var firebase = require("firebase/app");
+  require("firebase/auth");
+  require("firebase/database");
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyArZi3nTVoGuU6WaJlpzlsoHH86z7dxcuA",

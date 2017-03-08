@@ -5,8 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'firebase'
-gem 'rest_client'
 gem 'will_paginate', '~>3.1.5'
 gem 'sunspot_solr'
 gem 'sunspot_rails'

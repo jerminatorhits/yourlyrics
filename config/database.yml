@@ -7,24 +7,15 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
-#development:
-#  adapter: mysql2
-#  encoding: utf8
-#  reconnect: false
-#  database: lyrics_database
-#  pool: 5
-#  username: root
-#  password: clumsy
-#  socket: /tmp/mysql.sock
 development:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
   database: lyrics_database
-  pool: 5
   username: masterUsername
   password: Pokemon2
-  socket: /tmp/mysql.sock
+  host: rds-mysql-10mintutorial.chexxcbm07sw.us-west-1.rds.amazonaws.com
+
+
 
 
 # Warning: The database defined as "test" will be erased and
@@ -43,9 +34,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
   database: lyrics_database
-  pool: 5
   username: masterUsername
   password: Pokemon2
-  socket: /tmp/mysql.sock
+  host: rds-mysql-10mintutorial.chexxcbm07sw.us-west-1.rds.amazonaws.com

@@ -16,5 +16,17 @@
 	  <#% end %>
   -->
     <%= yield %>
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyArZi3nTVoGuU6WaJlpzlsoHH86z7dxcuA",
+    authDomain: "lyricsdatabase-3aefe.firebaseapp.com",
+    databaseURL: "https://lyricsdatabase-3aefe.firebaseio.com",
+    storageBucket: "lyricsdatabase-3aefe.appspot.com",
+    messagingSenderId: "804994355133"
+  };
+  firebase.initializeApp(config);
+</script>
   </body>
 </html>

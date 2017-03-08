@@ -6,28 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyArZi3nTVoGuU6WaJlpzlsoHH86z7dxcuA",
-    authDomain: "lyricsdatabase-3aefe.firebaseapp.com",
-    databaseURL: "https://lyricsdatabase-3aefe.firebaseio.com",
-    storageBucket: "lyricsdatabase-3aefe.appspot.com",
-    messagingSenderId: "804994355133"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js"></script>
   </head>
 
   <body>
   <!--
-  	<%= form_tag(songs_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search Lyrics" %>
-      <%= submit_tag "Search", :name => nil %>
-	  <% end %>
+  	<%#= form_tag(songs_path, :method => "get", id: "search-form") do %>
+      <%#= text_field_tag :search, params[:search], placeholder: "Search Lyrics" %>
+      <%#= submit_tag "Search", :name => nil %>
+	  <#% end %>
   -->
     <%= yield %>
   </body>

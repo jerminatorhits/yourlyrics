@@ -7,10 +7,10 @@ class SongsController < ApplicationController
     # @songs = Song.all
     @search = Song.search do
       fulltext params[:search]
+      paginate(:page => params[:page])
     end
     # # binding.pry
     @songs = @search.results
-    
     #@songs = Song.first
     #@songs = Song.all
     # binding.pry

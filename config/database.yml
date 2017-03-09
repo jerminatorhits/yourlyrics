@@ -13,8 +13,9 @@ development:
   database: lyrics_database
   username: masterUsername
   password: Pokemon2
+  pool: 5
+  port: 3306
   host: rds-mysql-10mintutorial.chexxcbm07sw.us-west-1.rds.amazonaws.com
-
 
 
 
@@ -37,4 +38,6 @@ production:
   database: lyrics_database
   username: masterUsername
   password: Pokemon2
+  pool: 5
+  port: 3306
   host: rds-mysql-10mintutorial.chexxcbm07sw.us-west-1.rds.amazonaws.com

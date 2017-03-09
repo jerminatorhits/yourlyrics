@@ -1,6 +1,6 @@
 production:
   solr:
-    hostname: localhost
+    hostname: rds-mysql-10mintutorial.chexxcbm07sw.us-west-1.rds.amazonaws.com:3306
     port: 8983
     log_level: WARNING
     path: /solr/production

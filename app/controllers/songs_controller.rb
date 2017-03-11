@@ -1,22 +1,51 @@
+
+
 class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
 
+
+  def index
+    if params[:search].blank?
+      @songs = Song.all.paginate(:page => params[:page], :per_page => 50)
+    else
+      @songs = Song.__elasticsearch__.search(params[:search]).paginate(:page => params[:page], :per_page => 50).results
+    end
+  end
+
   # GET /songs
   # GET /songs.json
+
+=begin
   def index
-    # @songs = Song.all
+
+    if params[:q].nil?
+      @songs = []
+    else
+      @songs = Song.search params[:q] 
+    end
+
     @search = Song.search do
       fulltext params[:search]
       paginate(:page => params[:page])
     end
     # # binding.pry
     @songs = @search.results
+
     #@songs = Song.first
     #@songs = Song.all
     # binding.pry
     #@songs = Song.first
     #@songs = Song.all
     #@songs = Song.paginate(:page => params[:page])
+  end
+=end
+
+  def search
+    if params[:q].nil?
+      @songs = []
+    else
+      @songs = Song.search(params[:q]).paginate(:page => params[:page], :per_page => 50)
+    end
   end
 
   # GET /songs/1

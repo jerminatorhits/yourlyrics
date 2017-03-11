@@ -6,9 +6,11 @@ git_source(:github) do |repo_name|
 end
 
 gem 'will_paginate', '~>3.1.5'
-gem 'sunspot_solr'
-gem 'sunspot_rails'
-#gem 'paginate'
+#gem 'sunspot_solr'
+#gem 'sunspot_rails'
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
+gem 'bonsai-elasticsearch-rails'
 gem 'progress_bar'
 
 gem 'rake', '~>12.0.0'

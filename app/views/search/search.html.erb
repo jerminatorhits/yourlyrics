@@ -1,0 +1,7 @@
+- @results.each do |page|
+  article
+    h3 = page.title
+    - if page.respond_to? :highlight
+      p = raw page.highlight.body.to_a.join(' ')
+    - else
+      p = raw truncate(page.body, length: 300)

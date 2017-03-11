@@ -1,0 +1,1 @@
+Elasticsearch::Model.client = Elasticsearch::Client.new url: ENV['https://zp7bpiu6:uv3576rppz3es5bu@boxwood-6146436.us-east-1.bonsaisearch.net']

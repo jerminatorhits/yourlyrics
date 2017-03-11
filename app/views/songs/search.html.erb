@@ -1,0 +1,19 @@
+<h1>Songs Search</h1>
+
+<%= form_for search_path, method: :get do |f| %>
+  <p>
+    <%= f.label "Search for" %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "Go", name: nil %>
+  </p>
+<% end %>
+
+<ul>
+  <% @songs.each do |song| %>
+    <li>
+      <h3>
+        <%= link_to song.title, controller: "songs", action: "show", id: song._id%>
+      </h3>
+    </li>
+  <% end %>
+</ul>

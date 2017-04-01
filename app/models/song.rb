@@ -2,6 +2,7 @@ require 'elasticsearch/model'
 
 class Song < ActiveRecord::Base
   include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
 end
 
 =begin

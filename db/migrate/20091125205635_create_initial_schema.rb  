@@ -1,0 +1,16 @@
+class CreateInitialSchema < ActiveRecord::Migration
+
+    def self.up
+        create_table "songs", primary_key: "tid", id: :string, limit: 18, default: "", collation: "utf8_general_ci", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+        t.string "mxmid",       limit: 7,   collation: "utf8_general_ci"
+        t.string "artist",      limit: 50,  collation: "utf8_general_ci"
+        t.string "title",       limit: 150, collation: "utf8_general_ci"
+    end
+
+    end
+
+    def self.down
+        # Don't really need this
+    end
+
+end
